@@ -1,11 +1,12 @@
-package com.bcarbonesi.marvelheroesvilains;
+package com.bcarbonesi.marvelheroesvilains.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.bcarbonesi.marvelheroesvilains.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, HeroesList.class);
+                Intent intent = new Intent(MainActivity.this, HeroesListActivity.class);
                 startActivity(intent);
 
             }
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, VillainsList.class);
+                Intent intent = new Intent(MainActivity.this, VillainsListActivity.class);
                 startActivity(intent);
 
             }

@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VillainsList"></activity>
-        <activity android:name=".HeroesList" />
-        <activity android:name=".CharactersDetails" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.VillainsListActivity"></activity>
+        <activity android:name=".activity.HeroesListActivity" />
+        <activity android:name=".activity.CharactersDetailsActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

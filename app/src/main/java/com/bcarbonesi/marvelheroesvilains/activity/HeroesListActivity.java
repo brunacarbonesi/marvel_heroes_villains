@@ -1,9 +1,11 @@
-package com.bcarbonesi.marvelheroesvilains;
+package com.bcarbonesi.marvelheroesvilains.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class HeroesList extends AppCompatActivity {
+import com.bcarbonesi.marvelheroesvilains.R;
+
+public class HeroesListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
