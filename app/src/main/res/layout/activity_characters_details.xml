@@ -4,6 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.CharactersDetailsActivity">
+    tools:context=".activity.CharactersDetailsActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imageViewCharacterPhotoDetail"
+        android:layout_width="420dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/captain_marvel_background" />
+
+    <ImageView
+        android:id="@+id/imageViewCharacterPhotoDetailMultiply"
+        android:layout_width="420dp"
+        android:layout_height="300dp"
+        android:background="@color/colorMultiply"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textViewCharacterType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="HERO"
+        android:textColor="@color/colorYellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCharacterName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCharacterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="260dp"
+        android:text="CAPTAIN"
+        android:textColor="@color/colorType"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCharacterSurname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="MARVEL"
+        android:textColor="@color/colorType"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCharacterName" />
+
+    <TextView
+        android:id="@+id/textViewCharacterBrief"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger. "
+        android:textColor="@color/colorType"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCharacterSurname2" />
+
+    <TextView
+        android:id="@+id/textViewBIoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="BIO"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCharacterBrief" />
+
+    <ImageView
+        android:id="@+id/imageViewLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBIoTitle"
+        app:srcCompat="@drawable/line_color_primary_dark" />
 
 </android.support.constraint.ConstraintLayout>
